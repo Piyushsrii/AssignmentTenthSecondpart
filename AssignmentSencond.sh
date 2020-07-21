@@ -12,17 +12,18 @@ fi
 
 #!/bin/bash -x        #UserCase------>2
 
-Headwin=0;
-Tailwin=0
+win=0;
+bats=0
 for((i=1;i<=10;i++))
 do
 randomvar=$((RANDOM%2))
 if [[ $randomvar == 1 ]]
 then
-((Headwin++))
-echo "Head $Headwin"
+((win++))
+echo "Head $win"
 else
-((Tailwin++))
-echo "Tail Tailwin"
+((bats++))
+echo "Tail $bats"
 fi
 done
+
